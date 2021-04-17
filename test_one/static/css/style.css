@@ -1,0 +1,90 @@
+.products_head_top {
+    background-image: url(../img/top_img.jpg);
+    height: 450px;
+    background-position: 1000px;
+}
+
+.products_head_top_h1 {
+    padding-top: 60px;
+    text-align: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 64px;
+    line-height: 75px;
+
+    color: #FAFAFA;
+}
+
+.products_head_top_h2 {
+    padding-top: 40px;
+    text-align: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+
+    color: #FAFAFA;
+}
+
+.products_head_footer_h1 {
+    padding: 40px;
+    text-align: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 64px;
+    line-height: 75px;
+
+    color: black;
+}
+
+.products_head_footer_card {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.products_head_footer {
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+
+
+.footer {
+    padding: 20px 35px;
+    background-color: darkgray;
+}
+
+.footer_ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+
+}
+
+.footer_li {
+    font-family: Public Sans;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+
+    text-align: center;
+    color: white
+}
+
+.card {
+    border: 1px solid black;
+}
+
+.card:hover {
+    color: red;
+}
+
+.my_btn {
+    margin: 30px 30px;
+}
