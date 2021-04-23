@@ -1,28 +1,18 @@
+{% extends "base.html" %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Shop</title>
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
-</head>
-<body>
-<div><a href="{% url 'shop_app:form' %}" class="btn btn-primary my_btn">Добавить товар</a></div>
+{% block content %}
+<button type="button" class=" btn btn-primary my_btn js-create-good" data-url="{% url 'shop_app:form' %}"><span class="yo">Добавить товар</span></button>
 <div class="products_head_footer">
     <h1 class="products_head_footer_h1">Выберите товар</h1>
     <div class="products_head_footer_card">
-        {% for item in products %}
-        <div class="card" style="width: 18rem;">
-            <img src="{% static 'img/Photo_Card.jpg' %}" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">{{item.name_product}}</h5>
-                <p class="card-text">{{item.provider}}</p>
-                <a href="#" class="btn btn-primary">Стоимость {{item.price}} Р</a>
-            </div>
-        </div>
-        {% endfor %}
+    {% include "products.html" %}
     </div>
 </div>
-</body>
-</html>
+<div class="modal fade" id="modal-good">
+<div class="modal-dialog">
+<div class="modal-content">
+
+  </div>
+</div>
+</div>
+{% endblock %}

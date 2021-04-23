@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+    {% block css %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    {% endblock %}
+    {% block js %}
+    <script src="{% static 'js/jquery.js'%}"></script>
+    <script src="{% static 'js/orders_scripts.js'%}"></script>
+    <script src="{% static 'js/close.js'%}"></script>
+    {% endblock %}
+</head>
+<body>
+{% block content %}
+{% endblock %}
+</body>
+</html>
