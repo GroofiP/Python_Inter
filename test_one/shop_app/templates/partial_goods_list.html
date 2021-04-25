@@ -1,0 +1,13 @@
+{% load static %}
+<div class="products_head_footer_card">
+    {% for item in products %}
+    <div class="card" style="width: 18rem;">
+        <img src="{% static 'img/Photo_Card.jpg' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">{{item.name_product}}</h5>
+            <p class="card-text">{{item.provider}}</p>
+            <a href="#" class="btn btn-primary">Стоимость {{item.price}} Р</a>
+        </div>
+    </div>
+    {% endfor %}
+</div>

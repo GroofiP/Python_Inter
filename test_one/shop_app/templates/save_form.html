@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<form method="post" action="{% url 'shop_app:form' %}"  class="js-good-create-form">
+    {% csrf_token %}
+    <div class="modal-body">
+        {{ product_form.as_p }}
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary my_btn_save">Create good</button>
+    </div>
+</form>
+{% endblock %}
