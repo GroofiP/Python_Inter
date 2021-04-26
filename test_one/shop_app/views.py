@@ -46,5 +46,5 @@ def save_form(request):
             "products" : products
                    }
 
-        return render(request, "save_form.html", content)
+        return render(request, "index.html", content)
 

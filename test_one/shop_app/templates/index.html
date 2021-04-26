@@ -1,7 +1,9 @@
 {% extends "base.html" %}
 {% load static %}
 {% block content %}
+<div class="basket_list">
 <button type="button" class=" btn btn-primary my_btn js-create-good" data-url="{% url 'shop_app:form' %}"><span class="yo">Добавить товар</span></button>
+</div>
 <div class="products_head_footer">
     <h1 class="products_head_footer_h1">Выберите товар</h1>
     <div class="products_head_footer_card">

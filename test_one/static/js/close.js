@@ -8,7 +8,7 @@ $(document).ready(function() {
             data: $form.serialize(),
 
         }).done(function(data) {
-            $('body').html(data);
+            $('.basket_list').html(data);
         }).fail(function() {
             console.log('fail');
         });
