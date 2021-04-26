@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% load static %}
+{% block content %}
+<div id="dialog" title="Basic dialog" class="modal-body">
+    <form method="post" enctype="multipart/form-data" action="{% url 'shop_app:form' %}" class="js-good-create-form">
+        {% csrf_token %}
+        {{ product_form.as_p }}
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default my_btn_close" data-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-primary">Create good</button>
+        </div>
+    </form>
+</div>
+{% endblock %}
