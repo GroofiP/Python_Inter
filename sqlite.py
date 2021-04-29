@@ -13,7 +13,7 @@ def create_connection(path):
     return connection
 
 
-con = create_connection("app_sq.sqlite")
+con = create_connection("app_sq.sqlite3")
 
 
 def execute_query(connection, query):
